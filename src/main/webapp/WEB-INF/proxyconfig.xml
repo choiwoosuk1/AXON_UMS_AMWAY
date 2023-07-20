@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<proxyConfig>
+    <ssoSite value="www.sample.com">
+        <proxy dns="proxy.sample.com" port="80" https="false">
+            <header ip="X-Forwarded-For" dns="X-Forwarded-Server" url="X-Original-URI"/>
+            <provider dns="proxy.sso-provider.com" port="80" path="/c001" https="false"/>
+        </proxy>
+    </ssoSite>
+</proxyConfig>
